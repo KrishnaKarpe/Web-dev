@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Response</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>API Response</h1>
+    <section>
+      <div class="filter-container">
+        <label for="countryFilter">Country:</label>
+        <select id="countryFilter">
+          <option value="all">All</option>
+          <!-- Options for unique countries -->
+        </select>
+        <label for="languageFilter">Language:</label>
+        <select id="languageFilter">
+          <option value="all">All</option>
+          <!-- Options for unique languages -->
+        </select>
+      </div>
+    </section>
+    <section>
+      <table id="responseTable">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Language</th>
+            <th>Doc ID</th>
+            <th>Download Link</th>
+            <th>Identifier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be populated here -->
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Response Details</h2>
+      <pre id="responseDetails"></pre>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

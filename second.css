@@ -1,3 +1,9 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -122,4 +128,51 @@ th {
 
 td {
   font-size: 0.9em;
+}
+/* Section styling */
+.styled-section {
+  /* background-color: #fff; */
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  padding: 20px;
+  align-items: left;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.styled-section label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Input styling */
+.styled-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  width: 200px; /* Adjust width as needed */
+  font-size: 14px;
+}
+
+/* Button styling */
+.styled-button {
+  background-color: #0f0e0e;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px; /* Adjust spacing between input and button */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #1d3944;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .styled-section {
+    width: 80%; /* Adjust width for smaller screens */
+  }
 }

@@ -51,6 +51,10 @@ function populateTable(apiResponse) {
     // Clear existing table rows
     tableBody.innerHTML = '';
   
+    // Clear existing dropdowns
+    countryHeader.innerHTML = 'Country';
+    languageHeader.innerHTML = 'Language';
+  
     // Get unique countries and languages
     const countries = new Set();
     const languages = new Set();

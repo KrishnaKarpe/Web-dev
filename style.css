@@ -1,40 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+  font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+  height: 150px;
+  background: #FFF;
+ 
+}
+
+.sidenav {
+  height: 100%;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.main {
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+  .login-form{
+      margin-top: 10%;
   }
-  
-  .container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .register-form{
+      margin-top: 10%;
   }
-  
-  h1 {
-    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+  .main{
+      margin-left: 40%; 
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
+
+  .sidenav{
+      width: 40%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
   }
-  
-  label {
-    margin-top: 10px;
+
+  .login-form{
+      margin-top: 80%;
   }
-  
-  input {
-    padding: 5px;
-    margin-bottom: 10px;
+
+  .register-form{
+      margin-top: 20%;
   }
-  
-  button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+}
+
+
+.login-main-text{
+  margin-top: 20%;
+  padding: 60px;
+  color: #fff;
+}
+
+.login-main-text h2{
+  font-weight: 300;
+}
+
+.btn-black{
+  background-color: #000 !important;
+  color: #fff;
+}

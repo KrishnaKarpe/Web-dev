@@ -7,30 +7,31 @@
   <link rel="stylesheet" href="second.css">
 </head>
 <body>
+  <header>
+    <h1>SyngRecords Insights</h1>
+    <button id="logoutBtn"><b>Logout</b></button>
+  </header>
   <div class="container">
-    <h1>Second Page</h1>
-    <button id="logoutBtn">Logout</button>
-    <label for="identifier">Identifier:</label>
-    <input type="text" id="identifier" name="identifier">
-    <button id="submitBtn">Submit</button>
-    <!-- <pre id="apiResponse"></pre> -->
-  </div>
-  <div class="table">
-    <h1>API Response</h1>
-    <table id="responseTable">
-      <thead>
-        <tr>
+    <section>
+      <label for="identifier">Identifier:</label>
+      <input type="text" id="identifier" name="identifier">
+      <button id="submitBtn">Submit</button>
+    </section>
+    <section>
+      <h2>API Response</h2>
+      <table id="responseTable">
+        <thead>
+          <tr>
             <th id="countryHeader">Country</th>
-      <th id="languageHeader">Language</th>
-          <!-- <th>Country</th>
-          <th>Language</th> -->
-          <th>Record Number</th>
-          <th>Download Link</th>
-          <th>Identifier</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+            <th id="languageHeader">Language</th>
+            <th>Record Number</th>
+            <th>Download Link</th>
+            <th>Identifier</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
   </div>
   <script src="second.js"></script>
 </body>

@@ -6,20 +6,49 @@ body {
   color: #333;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222721;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  color: #4CAF50;
+  text-align: center;
+  flex-grow: 1;
+}
+
+header #logoutBtn {
+  background-color: #babda2;
+  color: #222721;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header #logoutBtn:hover {
+  background-color: #fdfdfd;
+}
+
 .container {
-  max-width: 95%; /* Increased the max-width to 95% for almost full width */
-  margin: 20px auto; /* Added some margin to the top and bottom */
+  max-width: 95%;
+  margin: 20px auto;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Slightly increased border-radius for better aesthetics */
+  border-radius: 10px;
 }
 
 section {
   margin-bottom: 40px;
 }
 
-h1, h2 {
+h2 {
   color: #4CAF50;
 }
 
@@ -44,14 +73,14 @@ h1, h2 {
 }
 
 table {
-  border-collapse: collapse; /* Changed to collapse for a cleaner look */
+  border-collapse: collapse;
   width: 100%;
 }
 
 th, td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd; /* Added a bottom border for rows */
+  border-bottom: 1px solid #ddd;
 }
 
 th {
@@ -60,15 +89,15 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9; /* Changed the color for better contrast */
+  background-color: #f9f9f9;
 }
 
 tr:hover {
-  background-color: #f1f1f1; /* Added hover effect for rows */
+  background-color: #f1f1f1;
 }
 
 td {
-  background-color: #fff; /* Ensuring td background color consistency */
+  background-color: #fff;
 }
 
 pre {
@@ -77,23 +106,20 @@ pre {
   overflow-x: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
-  /* border-radius: 5px; */
-  /* border: 1px solid #ddd;  */
 }
 
-/* Additional styles to enhance the table */
 table {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow to the table */
-  border-radius: 10px; /* Rounded corners for the table */
-  overflow: hidden; /* Ensure rounded corners work with the shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 th {
   font-weight: bold;
-  text-transform: uppercase; /* Uppercase text for headers */
-  letter-spacing: 1px; /* Added letter spacing for better readability */
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 td {
-  font-size: 0.9em; /* Slightly smaller font size for table data */
+  font-size: 0.9em;
 }

@@ -98,7 +98,7 @@ function populateTable(apiResponse) {
       const languageCell = row.insertCell();
       languageCell.textContent = result.Language;
       const docIdCell = row.insertCell();
-      docIdCell.textContent = result.Doc_id;
+      docIdCell.textContent = result.Recn;
       const downloadLinkCell = row.insertCell();
       const downloadLink = document.createElement('a');
       downloadLink.href = '#';
